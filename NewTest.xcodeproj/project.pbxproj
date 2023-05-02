@@ -83,6 +83,8 @@
 			dependencies = (
 			);
 			name = NewTest;
+			packageProductDependencies = (
+			);
 			productName = NewTest;
 			productReference = B846E33C2A016B100091C8D5 /* NewTest.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +113,8 @@
 				Base,
 			);
 			mainGroup = B846E3332A016B100091C8D5;
+			packageReferences = (
+			);
 			productRefGroup = B846E33D2A016B100091C8D5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
