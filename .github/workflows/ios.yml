@@ -1,18 +1,14 @@
 name: Swift
-
+        
 on: [pull_request]
 
 jobs:
-  build:
+build:
+name: Danger JS
+runs-on: ubuntu-latest
+steps:
+- uses: actions/checkout@v1
+- name: Danger
+uses: danger/swift@3.16.0
 
-    runs-on: macos-latest
-
-    steps:
-      - uses: actions/checkout@v3
-      - name: Select Xcode
-        run: sudo xcode-select -s "/Applications/Xcode_14.0.1.app"
-      - name: Build
-        run: swift build
-      - name: Danger
-        run: danger-swift ci
 
