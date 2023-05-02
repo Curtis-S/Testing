@@ -10,5 +10,6 @@ steps:
 - uses: actions/checkout@v1
 - name: Danger
 uses: danger/swift@3.16.0
+env: "test"
 
 
