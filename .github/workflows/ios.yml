@@ -3,13 +3,16 @@ name: Swift
 on: [pull_request]
 
 jobs:
-build:
-runs-on: ubuntu-latest
-steps:
-- uses: actions/checkout@v3
-- name: Danger
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+    - name: Danger
 uses: danger/swift@3.16.0
 env: "test"
+        
 
 
 
