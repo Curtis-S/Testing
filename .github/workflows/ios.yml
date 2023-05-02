@@ -4,7 +4,6 @@ on: [pull_request]
 
 jobs:
 build:
-name: UnitTest
 runs-on: ubuntu-latest
 steps:
 - uses: actions/checkout@v3
