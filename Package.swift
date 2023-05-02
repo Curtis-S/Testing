@@ -4,14 +4,14 @@
 import PackageDescription
 
 let package = Package(
-    name: "TestDanger",
+    name: "NewTest",
     defaultLocalization: "en",
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "DangerDep",
             type: .dynamic,
-            targets: ["TestDanger"]),
+            targets: ["NewTest"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -22,12 +22,12 @@ let package = Package(
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
-            name: "TestDanger",
+            name: "NewTest",
             dependencies: [
                 .product(name:"Danger",package: "swift")
-            ], sources: ["Test.swift"]),
+            ],path: "NewTest/", sources: ["Test.swift"]),
         .testTarget(
-            name: "TestDangerTests",
-            dependencies: ["TestDanger"]),
+            name: "NewTestTests",
+            dependencies: ["NewTest"]),
     ]
 )
