@@ -10,7 +10,7 @@ jobs:
       - name: Danger
         uses: danger/swift@3.16.0
         env:
-          DANGER_GITHUB_API_TOKEN: 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
+          DANGER_GITHUB_API_TOKEN: ${{ secrets.DANGER_GITHUB_API_TOKEN }}
     
     
 
