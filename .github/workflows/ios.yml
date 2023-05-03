@@ -7,10 +7,11 @@ build:
 name: Danger JS
 runs-on: ubuntu-latest
 steps:
-- uses: actions/checkout@v1
+- uses: actions/checkout@v3
 - name: Danger
-uses: danger/swift@2.0.1
+uses: danger/swift@3.16.0
 env:
 GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    
     
 
