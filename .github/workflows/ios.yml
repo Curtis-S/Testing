@@ -1,12 +1,12 @@
         
-name: "Danger Swift"
-on: 
+name: Danger
+on:
   pull_request:
 
 jobs:
   Danger:
     runs-on: ubuntu-latest
-       steps:
+      steps:
         - uses: actions/checkout@v3
         - name: Danger
         uses: danger/swift@3.16.0
