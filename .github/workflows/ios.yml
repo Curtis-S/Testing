@@ -3,14 +3,14 @@ name: "Danger Swift"
 on: [push]
 
 jobs:
-Danger:
-runs-on: ubuntu-latest
-steps:
-- uses: actions/checkout@v3
-- name: Danger
-uses: danger/swift@3.16.0
-env:
-GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        Danger:
+        runs-on: ubuntu-latest
+        steps:
+        - uses: actions/checkout@v3
+        - name: Danger
+        uses: danger/swift@3.16.0
+        env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     
     
 
