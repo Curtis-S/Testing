@@ -9,9 +9,9 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Danger
-      uses: danger/swift@3.16.0
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        uses: danger/swift@3.16.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     
     
 
