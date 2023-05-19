@@ -8,7 +8,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Danger
-        run: brew install Danger JS 
+        run: |
+          brew install Danger JS 
           swift run danger-swift ci 
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
